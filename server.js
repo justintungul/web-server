@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var PORT = 3000; //uppercase denotes a CONSTANT varialbe
+var PORT = process.env.PORT || 3000; //uppercase denotes a CONSTANT varialbe
 
 var middleware = require('./middleware.js');
 
